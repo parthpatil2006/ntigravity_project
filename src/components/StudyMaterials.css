@@ -1,0 +1,102 @@
+.study-materials-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.material-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.material-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(25, 118, 210, 0.1);
+  border-color: #bbdefb;
+}
+
+.material-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.material-card:hover .material-icon {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.material-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 24px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  padding: 14px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+  width: 100%;
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(25, 118, 210, 0.4);
+}
+
+/* Bottom Section Styles */
+.study-materials-section-bottom {
+  padding: 80px 0;
+  background-color: #f8fafc;
+}
+
+.alt-grid {
+  gap: 40px;
+}
+
+.alt-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,1), 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.alt-card h3 {
+  line-height: 1.4;
+}
+
+.alt-btn {
+  background: #ffffff;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.alt-btn:hover {
+  background: #1976d2;
+  color: white;
+  box-shadow: 0 10px 20px rgba(25, 118, 210, 0.2);
+}
